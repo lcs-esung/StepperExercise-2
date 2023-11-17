@@ -69,18 +69,34 @@ struct ContentView: View {
 
 #Preview {
     TabView {
-        
         PlusView()
-            .tabItem { 
+            .tabItem {
+                Image(systemName: "plus")
                 Text("Plus")
-                Image(systemName: "plus")) }
-
-                    
-                }
+            }
+            .tag(1)
         
+        MinusView()
+            .tabItem {
+                Image(systemName: "minus")
+                Text("Minus")
+            }
+            .tag(2)
         
+        TimesView()
+            .tabItem {
+                Image(systemName: "multiply")
+                Text("Mutiply")
+            }
+            .tag(3)
         
-        
+        DivideView()
+            .tabItem {
+                Image(systemName: "divide")
+                Text("Divide")
+            }
+            .tag(3)
+        }
+    .tint(.purple)
     }
-    ContentView()
-}
+
