@@ -1,19 +1,19 @@
 //
-//  ContentView.swift
+//  DivideView.swift
 //  StepperExercise 2
 //
-//  Created by Edna Sung on 2023-11-16.
+//  Created by Edna Sung on 2023-11-17.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct DivideView:  View {
     @State var base1: Int = 1
     
     @State var base2: Int = 1
     
-    var sum: Int {
-        return base1 + base2
+    var divide: Int {
+        return base1 / base2
     }
     var body: some View {
         
@@ -36,7 +36,7 @@ struct ContentView: View {
             
             
             HStack {
-                Text("+")
+                Text("÷")
                     .font(.system(size: 60))
                 
                 Spacer()
@@ -59,7 +59,7 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                Text("\(sum)")
+                Text("\(divide)")
                     .font(.system(size: 60))
             }
             .padding()
@@ -68,19 +68,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    TabView {
-        
-        PlusView()
-            .tabItem { 
-                Text("Plus")
-                Image(systemName: "plus")) }
-
-                    
-                }
-        
-        
-        
-        
-    }
-    ContentView()
+    DivideView()
 }

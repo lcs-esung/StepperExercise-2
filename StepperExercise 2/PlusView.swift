@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  PlusView.swift
 //  StepperExercise 2
 //
-//  Created by Edna Sung on 2023-11-16.
+//  Created by Edna Sung on 2023-11-17.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct PlusView: View {
     @State var base1: Int = 1
     
     @State var base2: Int = 1
@@ -68,19 +68,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    TabView {
-        
-        PlusView()
-            .tabItem { 
-                Text("Plus")
-                Image(systemName: "plus")) }
-
-                    
-                }
-        
-        
-        
-        
-    }
-    ContentView()
+    PlusView()
 }
