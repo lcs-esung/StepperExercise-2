@@ -95,7 +95,7 @@ struct ContentView: View {
                 Image(systemName: "divide")
                 Text("Divide")
             }
-            .tag(3)
+            .tag(4)
         }
     .tint(.purple)
     }
